@@ -52,12 +52,7 @@ svg {
     padding: 10px 50px;
 }
 
-.menu a button {
-    margin: 10px;
-    font-size: 16px;
-    font-weight: 700;
-    
-}
+
 
 .searchBar {
     display: none;
@@ -87,14 +82,16 @@ svg {
 }
 
 .menu button {
-    padding: 10px 20px;
+    padding: 10px;
     cursor: pointer;
     background: var(--secondaryColor);
+    white-space: nowrap;
     border: none;
     font-size: 15px;
-    font-weight: 500;
     border-radius: 4px;
     color: var(--primaryColor);
+    margin: 10px;
+        font-weight: 700;
 }
 
 
@@ -559,6 +556,24 @@ svg {
 }
 
 
+@media screen and (max-width:447px) {
+    .menu{
+        display: none;
+    }
+    .logo{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:403px){
+    .subLeft{
+        display: none;
+    }
+    .subRight{
+        text-align: center;
+    }
+}
+
 
 
 @media screen and (min-width:487px) {
@@ -628,7 +643,7 @@ svg {
 
 
 
-@media screen and (min-width:1004px) {
+@media screen and (min-width:1081px) {
 
     .searchBar {
         flex: 3.5;
@@ -664,7 +679,7 @@ svg {
 
 }
 
-@media screen and (max-width:669px) {
+@media screen and (max-width:709px) {
     .nosProduits {
         display: none;
     }
