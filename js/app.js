@@ -1,17 +1,9 @@
 // Recuperer les elements du DOM
 const categorie = document.querySelector(".categorie")
 const categorieList = document.querySelector(".categorieList")
-const sliderImg = document.querySelector(".sliderImg")
+const sliderImg = document.querySelectorAll(".sliderImg")
 const back = document.querySelector(".iconBack")
 const next = document.querySelector(".iconNext")
-
-const sliderImages = {
-    "img1": '<img class="sliderImg" src="../assets/img/pc3.jpg" alt="">',
-    "img2": '<img class="sliderImg" src=""../assets/img/pc2.jpg"" alt="">',
-    "img3": '<img class="sliderImg" src="../assets/img/pcs.jpg" alt="">' ,
-    "img4": '<img class="sliderImg" src="../assets/img/pc3.jpeg"alt="">' ,
-}
-
 
 
 
@@ -23,6 +15,19 @@ categorie.addEventListener("click", () => {
 })
 
 //Les carousel
+let currentSlide = 0;
+function nextSlide() {
+    sliderImg[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % sliderImg.length;
+    sliderImg[currentSlide].classList.add('active');
+}
+
+setInterval(nextSlide, 2000);
+
+
+
+
+//Manipulation du formulaire
 
 
 

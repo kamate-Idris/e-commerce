@@ -4,25 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connexion | LOGO</title>
+    <title>Register | LOGO</title>
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/connexion.js" defer></script>
 </head>
 <body>
-    <form action="" class="form connexion">
+    <form action="" class="form register">
         <div class="formContainer">
             <div class="error ">email ou mot de passe incorrect</div>
             <div class="logoConnexion">LOGO</div>
-            <div class="title">Connectez-vous a votre compte pour passer une commande</div>
+            <div class="title">Creer un compte pour pouvoir passer vos commandes</div>
             <div class="inputs">
-                <input  name="email" type="email" placeholder="Entrer votre email">
-                <input name="password" type="password" placeholder="Enter Votre mot de passe">
+                <input  name="nom" type="text" placeholder="Nom et prenom" required>
+                <input  name="email" type="email" placeholder="Entrer votre email" required>
+                <input  name="password" type="password" placeholder="Entrer votre mot de passe" required>
+                <input name="confirmePasse" type="password" placeholder="Confirmer votre mot de passe" required>
             </div>
             <div class="compte">
-                <div class="oublier creer"><a href="pageRegister.html">Creer un compte</a></div>
-                <div class="oublier passe"><a href="#">Mot de passe oublié?</a></div>
+    
             </div>
-            <button>Se connecter</button>
+            <button>Creer son compte</button>
         </div>
     </form>
 </body>
